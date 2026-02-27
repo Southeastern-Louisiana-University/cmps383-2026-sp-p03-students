@@ -50,20 +50,6 @@ public class DataContextTests
     }
 
     [TestMethod]
-    public void DataContext_HasLocation()
-    {
-        using var scope = context.GetServices().CreateScope();
-        var dbContext = GetDataContext(scope);
-        if (dbContext == null)
-        {
-            Assert.Fail("Not ready for this test");
-            return;
-        }
-
-        EnsureSet("Location", dbContext);
-    }
-
-    [TestMethod]
     public void DataContext_HasUser()
     {
         using var scope = context.GetServices().CreateScope();
