@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { UncontrolledIncrementCountButton } from "./IncrementCountButton";
 import { UserLoggedInContext } from "./UserLoggedInContext";
+import { Link } from "react-router";
 
 interface LocationDto {
   address: string;
@@ -44,6 +45,8 @@ function App() {
           </a>
         </div>
         <h1>Vite + React is cool</h1>
+
+        <Link to="/test">Go to test page!</Link>
         {locations.length > 0 ? (
           <ul>
             {locations.map((location) => (
