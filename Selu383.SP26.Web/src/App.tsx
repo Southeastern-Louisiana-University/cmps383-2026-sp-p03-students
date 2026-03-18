@@ -12,6 +12,7 @@ interface LocationDto {
   name: string;
   tableCount: number;
 }
+
 function App() {
   //const [count, setCount] = useState(0);
 
