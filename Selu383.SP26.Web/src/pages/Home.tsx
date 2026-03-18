@@ -4,14 +4,7 @@ import viteLogo from "/vite.svg";
 import "@/styles/App.css";
 import { UncontrolledIncrementCountButton } from "@/components/IncrementCountButton";
 import { Link } from "react-router";
-
-interface LocationDto {
-  address: string;
-  id: number;
-  managerId: number | null;
-  name: string;
-  tableCount: number;
-}
+import type { LocationDto } from "@/types/LocationDto";
 
 function Home() {
   //const [count, setCount] = useState(0);
@@ -49,8 +42,7 @@ function Home() {
           {locations.map((location) => (
             <li key={location.id}>
               <h2>{location.name}</h2>
-              <p>{location.address}</p>
-              <p>Tables: {location.tableCount}</p>
+              <Link to={`/locations/${location.id}`}>View Details</Link>
             </li>
           ))}
         </ul>

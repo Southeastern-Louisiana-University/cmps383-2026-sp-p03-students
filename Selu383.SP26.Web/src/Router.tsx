@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router";
 import Home from "@/pages/Home";
 import { TestPage } from "@/pages/TestPage";
 import { NavBar } from "@/components/NavBar";
+import { LocationDetailPage } from "@/pages/LocationDetailPage";
 
 export function Router() {
   return (
@@ -9,6 +10,7 @@ export function Router() {
       <Route element={<NavBar />}>
         <Route index element={<Home />} />
         <Route path="test" element={<TestPage />} />
+        <Route path="locations/:locationId" element={<LocationDetailPage />} />
       </Route>
     </Routes>
   );
