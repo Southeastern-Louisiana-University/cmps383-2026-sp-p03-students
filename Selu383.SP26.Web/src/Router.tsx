@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router";
-import App from "./App";
-import { TestPage } from "./TestPage";
+import App from "@/pages/App";
+import { TestPage } from "@/pages/TestPage";
 
 export function Router() {
   return (

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
+import reactLogo from "@/assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./App.css";
-import { UncontrolledIncrementCountButton } from "./IncrementCountButton";
-import { UserLoggedInContext } from "./UserLoggedInContext";
+import "@/styles/App.css";
+import { UncontrolledIncrementCountButton } from "@/components/IncrementCountButton";
+import { UserLoggedInContext } from "@/context/UserLoggedInContext";
 import { Link } from "react-router";
 
 interface LocationDto {

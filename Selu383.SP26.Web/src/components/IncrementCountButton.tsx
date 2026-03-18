@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState, type ReactNode } from "react";
-import { UserLoggedInContext } from "./UserLoggedInContext";
+import { UserLoggedInContext } from "@/context/UserLoggedInContext";
 
 export interface IncrementCountButtonProps {
   setCount: React.Dispatch<React.SetStateAction<number>>;
