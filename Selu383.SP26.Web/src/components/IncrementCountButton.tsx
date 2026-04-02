@@ -17,8 +17,8 @@ export function IncrementCountButton({ setCount, count }: IncrementCountButtonPr
 
 export function UncontrolledIncrementCountButton(): ReactNode {
   const [count, setCount] = useState(0);
-  const isLoggedIn = useContext(UserLoggedInContext);
-  if (!isLoggedIn) {
+  const currentUser = useContext(UserLoggedInContext);
+  if (!currentUser) {
     return <p>You must be logged in to increment the count</p>;
   }
 
